@@ -32,6 +32,7 @@ cd ~
 brew install rbenv ruby-build
 latestruby=$(rbenv install -l | grep -v - | tail -1 | xargs)
 rbenv install $latestruby
+rbenv global $latestruby
 
 # Make sure iTerm2 is installed first
 

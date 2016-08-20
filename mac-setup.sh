@@ -22,6 +22,18 @@ latestruby=$(rbenv install -l | grep -v - | tail -1 | xargs)
 rbenv install $latestruby
 rbenv global $latestruby
 
+# Download and install phpbrew
+curl -L -O https://github.com/phpbrew/phpbrew/raw/master/phpbrew
+chmod +x phpbrew
+sudo mv phpbrew /usr/bin/phpbrew
+echo "[[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc" >> ~/.zshrc
+
+# Download and install `gvm` with latest version of Go Lang
+bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
+source ~/.gvm/scripts/gvm
+latestgo=$(gvm listall | grep -v r | grep -v b | tail -n 2 | xargs)
+gvm install $latestgo
+
 # Make sure iTerm2 is installed first
 
 # Install Zshell
@@ -48,3 +60,6 @@ mkdir -p ~/dev
 # Download and install developer credentials
 cd ~/dev
 git clone https://github.com/tylerbuchea/developer-credentials.git
+
+# Just in Case
+source ~/.zshrc

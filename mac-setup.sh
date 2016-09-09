@@ -1,7 +1,11 @@
 # Manually install Xcode from Appstore
 # Manually install Android Studio from website
 # Manually install Git from website
-# Additional manual steps required for iTerm Cobalt2 theme https://github.com/wesbos/Cobalt2-iterm
+# Manually install HyperTerminal
+
+# Install Zshell
+cd ~
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Download and install `nvm` with latest version of node
 cd ~
@@ -27,18 +31,21 @@ curl -L -O https://github.com/phpbrew/phpbrew/raw/master/phpbrew
 chmod +x phpbrew
 sudo mv phpbrew /usr/bin/phpbrew
 echo "[[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc" >> ~/.zshrc
+source ~/.zshrc
+phpbrew self-update
+phpbrew update
+# xcode-select --install
+source ~/.zshrc
+phpbrew install 7.0 +default
 
 # Download and install `gvm` with latest version of Go Lang
 bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
 source ~/.gvm/scripts/gvm
 latestgo=$(gvm listall | grep -v r | grep -v b | tail -n 2 | xargs)
+gvm install go1.4 --binary # --binary is temporary to fix gvm bug PR is in proccess https://github.com/moovweb/gvm/issues/217
+gvm use go1.4
 gvm install $latestgo
-
-# Make sure iTerm2 is installed first
-
-# Install Zshell
-cd ~
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+gvm use $latestgo
 
 # Download and install dotfiles see repo README for more info
 cd ~

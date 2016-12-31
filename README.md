@@ -1,10 +1,10 @@
 ## Developer Environment
 
-**Bash Script**
+**Bash script**
 
 ```language-bash
-# Manual Steps
-# complete after you run the script
+# Manual steps
+# Complete these after you run the script
 
 # Manually install Xcode from Appstore
 # Manually install Android Studio from website

@@ -31,15 +31,12 @@ nvm install node
 
 # Download and install `rbenv` with latest version of ruby
 cd ~
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 # brew install openssl
 # brew link --force openssl
 brew install rbenv ruby-build
 latestruby=$(rbenv install -l | grep -v - | tail -1 | xargs)
 rbenv install $latestruby
 rbenv global $latestruby
-
-# Make sure iTerm2 is installed first
 
 # Install Zshell
 cd ~

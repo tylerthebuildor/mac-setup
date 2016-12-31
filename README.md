@@ -9,7 +9,7 @@
 # Manually install Xcode from Appstore
 # Manually install Android Studio from website
 # Generate new SSH key: ssh-keygen -t rsa -b 4096 -C "tyler@buchea.com"
-# In ~/.zshrc set plugins variable: plugins=(git rupaz)
+# In ~/.zshrc set plugins variable: plugins=(git z)
 # In ~/.dotfiles/.credentials change the git credentials to your own
 # In ~/.zshrc and change the theme variable to ZSH_THEME="cobalt2"
 # In ~/.hyperterm.js add Powerline font like so: fontFamily: '"Inconsolata for Powerline", Menlo, ...

@@ -26,11 +26,18 @@
 brew install git
 brew cask
 
+# Install brew tools and stuff
+brew install redis
+brew install mongodb
+brew install postgresql
+brew install trash
+
 # Install gui apps via brew cask
 brew cask install alfred
 brew cask install atom
 brew cask install caffeine
 brew cask install chrome
+brew cask install docker
 brew cask install filezilla
 brew cask install hypercli
 brew cask install mamp
@@ -62,6 +69,9 @@ git pull
 source ~/.bash_profile
 nvm install node
 
+# Install Node packages
+npm install -g pm2
+
 # Download and install `rbenv` with latest version of ruby
 cd ~
 # brew install openssl
@@ -70,6 +80,9 @@ brew install rbenv ruby-build
 latestruby=$(rbenv install -l | grep -v - | tail -1 | xargs)
 rbenv install $latestruby
 rbenv global $latestruby
+
+# Install ruby gems
+# gem install rails
 
 # Install Zshell
 cd ~

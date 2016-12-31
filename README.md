@@ -15,6 +15,12 @@
 # Manually install Git from website
 # Additional manual steps required for iTerm Cobalt2 theme https://github.com/wesbos/Cobalt2-iterm
 
+# Official brew download & install command
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# Install Git
+brew install git
+
 # Download and install `nvm` with latest version of node
 cd ~
 touch ~/.bash_profile

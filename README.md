@@ -9,15 +9,10 @@
 # Manually install Xcode from Appstore
 # Manually install Android Studio from website
 # Generate new SSH key: ssh-keygen -t rsa -b 4096 -C "tyler@buchea.com"
-# Manually add plugins to ~/.zshrc
-  # plugins=(git rupaz)
-# In ~/.dotfiles/.credentials manually add the lines below with your own git info (without the hashtags):
-  # export GIT_AUTHOR_NAME="Tyler Buchea"
-  # export GIT_AUTHOR_EMAIL=tyler@buchea.com
-  # export GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
-  # export GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
-# Open up your ZSH preferences at ~/.zshrc and change the theme variable to ZSH_THEME="cobalt2"
-# Open your hyperterm preferences ~/.hyperterm.js and add Powerline to begining of the fontFamily list like so: fontFamily: '"Inconsolata for Powerline", Menlo, ...
+# In ~/.zshrc set plugins variable: plugins=(git rupaz)
+# In ~/.dotfiles/.credentials change the git credentials to your own
+# In ~/.zshrc and change the theme variable to ZSH_THEME="cobalt2"
+# In ~/.hyperterm.js add Powerline font like so: fontFamily: '"Inconsolata for Powerline", Menlo, ...
 
 # Official brew download & install command
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -92,7 +87,6 @@ source ~/.zshrc
 # Download and install dotfiles see repo README for more info
 cd ~
 git clone https://github.com/tylerbuchea/.dotfiles
-echo '' > ~/.dotfiles/.credentials
 echo "source ~/.dotfiles/.includes" >> ~/.zshrc
 source ~/.zshrc
 

@@ -12,7 +12,6 @@
 ```language-bash
 # Manually install Xcode from Appstore
 # Manually install Android Studio from website
-# Manually install Git from website
 # Additional manual steps required for iTerm Cobalt2 theme https://github.com/wesbos/Cobalt2-iterm
 
 # Official brew download & install command
@@ -27,7 +26,7 @@ touch ~/.bash_profile
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash
 cd ~/.nvm
 git pull
-source ~/bash_profile
+source ~/.bash_profile
 nvm install node
 
 # Download and install `rbenv` with latest version of ruby

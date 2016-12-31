@@ -8,6 +8,7 @@
 
 # Manually install Xcode from Appstore
 # Manually install Android Studio from website
+# Generate new SSH key: ssh-keygen -t rsa -b 4096 -C "tyler@buchea.com"
 # Manually add plugins to ~/.zshrc
   # plugins=(git rupaz)
 # In ~/.dotfiles/.credentials manually add the lines below with your own git info (without the hashtags):

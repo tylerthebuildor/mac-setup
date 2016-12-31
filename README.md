@@ -1,12 +1,5 @@
 ## Developer Environment
 
-**Current Versions of Stuff**
-* OSX - 10.11.05
-* Python - Python 2.7.10 - /usr/bin/python
-* Ruby - ruby 2.0.0p648 (2015-12-16 revision 53162) [universal.x86_64-darwin15] - /usr/bin/ruby
-* Git - git version 2.7.4 (Apple Git-66) - /usr/bin/git
-* Node
-
 **Bash Script**
 
 ```language-bash
@@ -19,6 +12,14 @@
 
 # Install Git
 brew install git
+brew cask
+
+# Install gui apps via brew cask
+brew cask install chrome atom mamp filezilla alfred spectacle caffeine slack skype
+brew cask install psequel sequel-pro medis mongochef
+
+# Atom plugins
+apm install badass-react-snippets
 
 # Download and install `nvm` with latest version of node
 cd ~
@@ -41,6 +42,7 @@ rbenv global $latestruby
 # Install Zshell
 cd ~
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+source ~/.zshrc
 
 # Download and install dotfiles see repo README for more info
 cd ~
@@ -48,6 +50,13 @@ git clone https://github.com/tylerbuchea/.dotfiles
 echo '' > ~/.dotfiles/.credentials
 echo "source ~/.dotfiles/.includes" >> ~/.zshrc
 source ~/.zshrc
+# Manually add plugins to ~/.zshrc
+  # plugins=(git rupaz)
+# In ~/.dotfiles/.credentials manually add the lines below with your own git info (without the hashtags):
+  # export GIT_AUTHOR_NAME="Tyler Buchea"
+  # export GIT_AUTHOR_EMAIL=tyler@buchea.com
+  # export GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
+  # export GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 
 # Download and partially install theme
 cd ~/Downloads
@@ -63,20 +72,3 @@ mkdir -p ~/dev
 cd ~/dev
 git clone https://github.com/tylerbuchea/developer-credentials.git
 ```
-
-## GUI Applications
-
-**Core**
-
-* Xcode
-* Chrome
-* Atom
-* MAMP
-* FileZilla
-* SequelPro
-
-**Misc**
-
-* Alfred
-* Spectacle
-* Caffeine

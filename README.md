@@ -15,8 +15,20 @@ brew install git
 brew cask
 
 # Install gui apps via brew cask
-brew cask install chrome atom mamp filezilla alfred spectacle caffeine slack skype
-brew cask install psequel sequel-pro medis mongochef
+brew cask install alfred
+brew cask install atom
+brew cask install caffeine
+brew cask install chrome
+brew cask install filezilla
+brew cask install hypercli
+brew cask install mamp
+brew cask install medis
+brew cask install mongochef
+brew cask install psequel
+brew cask install sequel-pro
+brew cask install skype
+brew cask install slack
+brew cask install spectacle
 
 # Atom plugins
 apm install badass-react-snippets

@@ -3,9 +3,20 @@
 **Bash Script**
 
 ```language-bash
+# Manual Steps
+# complete after you run the script
+
 # Manually install Xcode from Appstore
 # Manually install Android Studio from website
-# Additional manual steps required for Cobalt2 theme https://github.com/wesbos/Cobalt2-iterm https://github.com/zeit/hyper/issues/464
+# Manually add plugins to ~/.zshrc
+  # plugins=(git rupaz)
+# In ~/.dotfiles/.credentials manually add the lines below with your own git info (without the hashtags):
+  # export GIT_AUTHOR_NAME="Tyler Buchea"
+  # export GIT_AUTHOR_EMAIL=tyler@buchea.com
+  # export GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
+  # export GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
+# Open up your ZSH preferences at ~/.zshrc and change the theme variable to ZSH_THEME="cobalt2"
+# Open your hyperterm preferences ~/.hyperterm.js and add Powerline to begining of the fontFamily list like so: fontFamily: '"Inconsolata for Powerline", Menlo, ...
 
 # Official brew download & install command
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -32,6 +43,14 @@ brew cask install spectacle
 
 # Atom plugins
 apm install badass-react-snippets
+apm install linter-eslint
+apm install highlight-selected
+apm install vim-mode
+apm install merge-conflicts
+apm install docblockr
+apm install pigments
+apm install file-icons
+# autocomplete-modules
 
 # Download and install `nvm` with latest version of node
 cd ~
@@ -62,13 +81,6 @@ git clone https://github.com/tylerbuchea/.dotfiles
 echo '' > ~/.dotfiles/.credentials
 echo "source ~/.dotfiles/.includes" >> ~/.zshrc
 source ~/.zshrc
-# Manually add plugins to ~/.zshrc
-  # plugins=(git rupaz)
-# In ~/.dotfiles/.credentials manually add the lines below with your own git info (without the hashtags):
-  # export GIT_AUTHOR_NAME="Tyler Buchea"
-  # export GIT_AUTHOR_EMAIL=tyler@buchea.com
-  # export GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
-  # export GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 
 # Download and partially install theme
 cd ~/Downloads
@@ -76,8 +88,6 @@ git clone https://github.com/wesbos/Cobalt2-iterm.git
 git clone https://github.com/powerline/fonts.git
 cp Cobalt2-iterm/cobalt2.zsh-theme ~/.oh-my-zsh/themes
 cp fonts/Inconsolata/Inconsolata\ for\ Powerline.otf /Library/Fonts
-# Open up your ZSH preferences at ~/.zshrc and change the theme variable to ZSH_THEME="cobalt2"
-# Open your hyperterm preferences ~/.hyperterm.js and add Powerline to begining of the fontFamily list like so: fontFamily: '"Inconsolata for Powerline", Menlo, ...
 
 # Create a dev folder
 mkdir -p ~/dev

@@ -5,7 +5,7 @@
 ```language-bash
 # Manually install Xcode from Appstore
 # Manually install Android Studio from website
-# Additional manual steps required for iTerm Cobalt2 theme https://github.com/wesbos/Cobalt2-iterm
+# Additional manual steps required for Cobalt2 theme https://github.com/wesbos/Cobalt2-iterm https://github.com/zeit/hyper/issues/464
 
 # Official brew download & install command
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -76,6 +76,8 @@ git clone https://github.com/wesbos/Cobalt2-iterm.git
 git clone https://github.com/powerline/fonts.git
 cp Cobalt2-iterm/cobalt2.zsh-theme ~/.oh-my-zsh/themes
 cp fonts/Inconsolata/Inconsolata\ for\ Powerline.otf /Library/Fonts
+# Open up your ZSH preferences at ~/.zshrc and change the theme variable to ZSH_THEME="cobalt2"
+# Open your hyperterm preferences ~/.hyperterm.js and add Powerline to begining of the fontFamily list like so: fontFamily: '"Inconsolata for Powerline", Menlo, ...
 
 # Create a dev folder
 mkdir -p ~/dev

@@ -53,6 +53,8 @@ apm install merge-conflicts
 apm install docblockr
 apm install pigments
 apm install file-icons
+apm install language-babel
+apm install gruvbox-syntax
 # autocomplete-modules
 
 # Download and install `nvm` with latest version of node

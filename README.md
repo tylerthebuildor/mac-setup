@@ -13,6 +13,8 @@
 # In ~/.dotfiles/.credentials change the git credentials to your own
 # In ~/.zshrc and change the theme variable to ZSH_THEME="cobalt2"
 # In ~/.hyperterm.js add Powerline font like so: fontFamily: '"Inconsolata for Powerline", Menlo, ...
+# Install Operator Mono and make ~/.hyperterm.js fontFamily: '"Operator Mono", "Inconsolata for Powerline"
+# Install Operator Mono and make Atom > Preferences... > Editor > Font Family: Operator Mono
 
 # Official brew download & install command
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"

@@ -37,6 +37,7 @@ brew cask install chrome
 brew cask install docker
 brew cask install filezilla
 brew cask install hypercli
+brew cask install java
 brew cask install mamp
 brew cask install medis
 brew cask install mongochef

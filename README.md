@@ -31,6 +31,7 @@ brew install trash
 
 # Install gui apps via brew cask
 brew cask install alfred
+brew cask install android-file-transfer
 brew cask install atom
 brew cask install caffeine
 brew cask install chrome

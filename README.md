@@ -5,16 +5,17 @@
 ```language-bash
 # Manual steps
 # Complete these after you run the script
-
 # Manually install Xcode from Appstore
 # Manually install Android Studio from website
-# Generate new SSH key: ssh-keygen -t rsa -b 4096 -C "tyler@buchea.com"
-# In ~/.zshrc set plugins variable: plugins=(git z)
+# In ~/.zshrc set plugins variable: plugins=(git z react-native)
 # In ~/.dotfiles/.credentials change the git credentials to your own
 # In ~/.zshrc and change the theme variable to ZSH_THEME="cobalt2"
 # In ~/.hyperterm.js add Powerline font like so: fontFamily: '"Inconsolata for Powerline", Menlo, ...
 # Install Operator Mono and make ~/.hyperterm.js fontFamily: '"Operator Mono", "Inconsolata for Powerline"
 # Install Operator Mono and make Atom > Preferences... > Editor > Font Family: Operator Mono
+
+# Generate new SSH key:
+ssh-keygen -t rsa -b 4096 -C "tyler@buchea.com"
 
 # Official brew download & install command
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -50,7 +51,6 @@ brew cask install slack
 brew cask install spectacle
 brew cask install transmission
 brew cask install vlc
-
 
 # Atom plugins
 apm install badass-react-snippets

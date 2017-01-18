@@ -80,15 +80,13 @@ npm install -g pm2
 
 # Download and install `rbenv` with latest version of ruby
 cd ~
-# brew install openssl
-# brew link --force openssl
 brew install rbenv ruby-build
 latestruby=$(rbenv install -l | grep -v - | tail -1 | xargs)
 rbenv install $latestruby
 rbenv global $latestruby
 
 # Install ruby gems
-# gem install rails
+gem install rails
 
 # Install Zshell
 cd ~

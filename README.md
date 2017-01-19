@@ -49,6 +49,7 @@ brew cask install sequel-pro
 brew cask install skype
 brew cask install slack
 brew cask install spectacle
+brew cask install sqlitebrowser
 brew cask install transmission
 brew cask install vlc
 

@@ -65,6 +65,7 @@ apm install file-icons
 apm install language-babel
 apm install gruvbox-syntax
 apm install atom-beautify
+apm install sort-lines
 # autocomplete-modules
 
 # Download and install `nvm` with latest version of node

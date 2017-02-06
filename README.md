@@ -79,7 +79,17 @@ source ~/.bash_profile
 nvm install node
 
 # Install Node packages
+npm install -g create-react-app
+npm install -g firebase-tools
+npm install -g hpm-cli
+npm install -g ios-deploy
+npm install -g ios-sim
+npm install -g markdown-pdf
+npm install -g nodemon
+npm install -g now
 npm install -g pm2
+npm install -g react-native-cli
+npm install -g surge
 
 # Download and install `rbenv` with latest version of ruby
 cd ~

@@ -27,6 +27,7 @@ brew cask
 # Install brew tools and stuff
 brew install redis
 brew install mongodb
+brew install nginx
 brew install postgresql
 brew install trash
 

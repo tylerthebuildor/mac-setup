@@ -56,6 +56,7 @@ brew cask install transmission
 brew cask install vlc
 
 # Atom plugins
+apm install prettier-atom
 apm install badass-react-snippets
 apm install linter-eslint
 apm install highlight-selected

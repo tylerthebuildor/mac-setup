@@ -92,6 +92,9 @@ npm install -g pm2
 npm install -g react-native-cli
 npm install -g surge
 
+# Install Hyper packages
+hpm install hyper-clean
+
 # Download and install `rbenv` with latest version of ruby
 cd ~
 brew install rbenv ruby-build

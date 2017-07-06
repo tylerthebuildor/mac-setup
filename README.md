@@ -9,8 +9,8 @@
 # Manually install Android Studio from website
 # In ~/.zshrc set plugins variable: plugins=(git z react-native)
 # In ~/.dotfiles/.credentials change the git credentials to your own
-# In ~/.zshrc and change the theme variable to ZSH_THEME="cobalt2"
-# In ~/.hyperterm.js add Powerline font like so: fontFamily: '"Inconsolata for Powerline", Menlo, ...
+# In ~/.hyper.js set shell: '/bin/zsh'
+# In ~/.hyper.js add Powerline font like so: fontFamily: '"Inconsolata for Powerline", Menlo, ...
 # Install Operator Mono and make ~/.hyperterm.js fontFamily: '"Operator Mono", "Inconsolata for Powerline"
 # Install Operator Mono and make Atom > Preferences... > Editor > Font Family: Operator Mono
 
@@ -115,9 +115,7 @@ source ~/.zshrc
 
 # Download and partially install theme
 cd ~/Downloads
-git clone https://github.com/wesbos/Cobalt2-iterm.git
 git clone https://github.com/powerline/fonts.git
-cp Cobalt2-iterm/cobalt2.zsh-theme ~/.oh-my-zsh/themes
 cp fonts/Inconsolata/Inconsolata\ for\ Powerline.otf /Library/Fonts
 
 # Create a dev folder

@@ -46,6 +46,7 @@ brew cask install medis
 brew cask install robo-3t
 brew cask install postman
 brew cask install psequel
+brew cask install reactotron
 brew cask install sequel-pro
 brew cask install skype
 brew cask install slack

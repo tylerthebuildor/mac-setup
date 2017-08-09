@@ -56,6 +56,10 @@ brew cask install transmission
 brew cask install vlc
 brew cask install visual-studio-code
 
+# VSCode Sync
+# code --install-extension Shan.code-settings-sync 
+# Settings Sync Gist ID: 9f0e91fe94851f2832495a364d0b3b47
+
 # Atom plugins
 apm install prettier-atom
 apm install badass-react-snippets

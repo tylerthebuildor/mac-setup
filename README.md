@@ -54,6 +54,7 @@ brew cask install spectacle
 brew cask install sqlitebrowser
 brew cask install transmission
 brew cask install vlc
+brew cask install visual-studio-code
 
 # Atom plugins
 apm install prettier-atom

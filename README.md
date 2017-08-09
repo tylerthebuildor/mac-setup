@@ -58,7 +58,8 @@ brew cask install visual-studio-code
 
 # VSCode Sync
 # code --install-extension Shan.code-settings-sync 
-# Settings Sync Gist ID: 9f0e91fe94851f2832495a364d0b3b47
+# Settings Sync Gist ID Old: 9f0e91fe94851f2832495a364d0b3b47
+# Settings Sync Gist ID New: 67c90dc3c78d50271e877232cbf1b418
 
 # Atom plugins
 apm install prettier-atom

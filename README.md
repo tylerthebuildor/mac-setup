@@ -34,7 +34,6 @@ brew install trash
 # Install gui apps via brew cask
 brew cask install alfred
 brew cask install android-file-transfer
-brew cask install atom
 brew cask install caffeine
 brew cask install chrome
 brew cask install docker
@@ -61,22 +60,6 @@ brew cask install visual-studio-code
 # code --install-extension Shan.code-settings-sync 
 # Settings Sync Gist ID Old: 9f0e91fe94851f2832495a364d0b3b47
 # Settings Sync Gist ID New: 67c90dc3c78d50271e877232cbf1b418
-
-# Atom plugins
-apm install prettier-atom
-apm install badass-react-snippets
-apm install linter-eslint
-apm install highlight-selected
-apm install vim-mode
-apm install merge-conflicts
-apm install docblockr
-apm install pigments
-apm install file-icons
-apm install language-babel
-apm install gruvbox-syntax
-apm install atom-beautify
-apm install sort-lines
-apm install autocomplete-emojis
 
 # Download and install `nvm` with latest version of node
 cd ~

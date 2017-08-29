@@ -39,6 +39,7 @@ brew cask install caffeine
 brew cask install chrome
 brew cask install docker
 brew cask install filezilla
+brew cask install google-cloud-sdk
 brew cask install hyper
 brew cask install java
 brew cask install mamp

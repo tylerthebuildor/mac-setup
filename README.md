@@ -25,6 +25,7 @@ brew install git
 brew cask
 
 # Install brew tools and stuff
+brew install fd
 brew install redis
 brew install mongodb
 brew install nginx
